@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "DesignPat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.SOLID.SingleResponsibilityPrinciple", "DesignPatterns.SOLID.SingleResponsibilityPrinciple\DesignPatterns.SOLID.SingleResponsibilityPrinciple.csproj", "{79465219-DEF4-4065-9A7B-390877762A7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.SOLID.OpenClosedPrinciple", "DesignPatterns.SOLID.OpenClosedPrinciple\DesignPatterns.SOLID.OpenClosedPrinciple.csproj", "{B8A60120-4245-4498-A565-04CB9839D2D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{79465219-DEF4-4065-9A7B-390877762A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79465219-DEF4-4065-9A7B-390877762A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79465219-DEF4-4065-9A7B-390877762A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8A60120-4245-4498-A565-04CB9839D2D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8A60120-4245-4498-A565-04CB9839D2D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8A60120-4245-4498-A565-04CB9839D2D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8A60120-4245-4498-A565-04CB9839D2D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

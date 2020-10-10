@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DesignPatterns.SOLID.OpenClosedPrinciple\DesignPatterns.SOLID.OpenClosedPrinciple.csproj" />
     <ProjectReference Include="..\DesignPatterns.SOLID.SingleResponsibilityPrinciple\DesignPatterns.SOLID.SingleResponsibilityPrinciple.csproj" />
   </ItemGroup>
 
