@@ -1,4 +1,5 @@
-﻿using DesignPatterns.SOLID.LiskovSubstitutionPrinciple;
+﻿using DesignPatterns.SOLID.InterfaceSegregationPrinciple;
+using DesignPatterns.SOLID.LiskovSubstitutionPrinciple;
 using DesignPatterns.SOLID.OpenClosedPrinciple;
 using DesignPatterns.SOLID.OpenClosedPrinciple.Specification;
 using DesignPatterns.SOLID.SingleResponsibilityPrinciple;
@@ -16,6 +17,7 @@ namespace DesignPatterns
             SingleResponsibilityPrinciple();
             OpenClosedPrinciple();
             LiskovSubstitutionPrinciple();
+            InterfaceSegregationPrinciple();
         }
 
         private static void SingleResponsibilityPrinciple()
@@ -118,6 +120,24 @@ namespace DesignPatterns
         private static int Area(Rectangle rc)
         {
             return rc.Width * rc.Height;
+        }
+
+        private static void InterfaceSegregationPrinciple()
+        {
+            Console.WriteLine("Interface Segregation Principle");
+
+            Document d = new Document("Test Document", "Interface Segregation testing");
+
+            MultiFunctionPrinter mfp = new MultiFunctionPrinter(new Printer(), new Scanner());
+
+            mfp.Print(d);
+
+            Printer p = new Printer();
+
+            p.Print(d);
+            Scanner s = new Scanner();
+
+            s.Scan(d);
         }
     }
 }
