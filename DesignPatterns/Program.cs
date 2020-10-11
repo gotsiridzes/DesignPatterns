@@ -44,13 +44,21 @@ namespace DesignPatterns
             foreach (var prod in bf.Filter(products, new SizeSpecification(Size.Small)))
                 Console.WriteLine("--- --- {0}", prod);
 
-            Console.WriteLine("---Large Blue Items---");
+            Console.WriteLine("---Large And Blue Items---");
             foreach (var prod in bf.Filter(products,
                 new AndSpecification<Product>(
                     new ColorSpecification(Color.Blue),
                     new SizeSpecification(Size.Large)
                     )))
                 Console.WriteLine("--- --- {0}", prod);
+
+            Console.WriteLine("---Medium Or Large Items");
+            foreach (var prod in bf.Filter(products, 
+                new OrSpecification<Product>(
+                    new SizeSpecification(Size.Medium),
+                    new SizeSpecification(Size.Large))))
+                Console.WriteLine("--- --- {0}", prod);
+
 
             Console.WriteLine();
         }

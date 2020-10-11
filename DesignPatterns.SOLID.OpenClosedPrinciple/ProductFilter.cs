@@ -24,6 +24,7 @@ namespace DesignPatterns.SOLID.OpenClosedPrinciple
         // ანუ უნდა შეგვეძლოს რამდენიმე ტიპის ფილტრის შექმნა მაგრამ არა კოდში უკან დაბრუნებით და ახალი მეთოდების დამატებით.
         // როოგრ განვავითაროთ ეს თემა კოდში დაბრუნების და მოდიფიკაციების გარეშე ? პასუხია მემკვიდრეობითობა
         // ამ brute force მიდგომის გამოყენების ნაცვლად შეგვიძლია გამოვიყენოთ პატერნი - Specification
+        // შემოვიტანოთ ორი ახალი ინტერფეისი ISpecification<T>, და iFilter<T>
         public IEnumerable<Product> FilterByColor(IEnumerable<Product> products, Color color)
         {
             foreach (var p in products)
