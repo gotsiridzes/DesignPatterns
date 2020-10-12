@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.SOLID.Interf
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SOLID", "SOLID", "{DB5748CE-5FF8-4462-AE32-1CD84540CA23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.SOLID.DependencyInversionPrinciple", "DesignPatterns.SOLID.DependencyInversionPrinciple\DesignPatterns.SOLID.DependencyInversionPrinciple.csproj", "{0457FBDE-492D-4EEA-A322-64CD02F9ED98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.SOLID.DependencyInversionPrinciple", "DesignPatterns.SOLID.DependencyInversionPrinciple\DesignPatterns.SOLID.DependencyInversionPrinciple.csproj", "{0457FBDE-492D-4EEA-A322-64CD02F9ED98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Builder", "DesignPatterns.Builder\DesignPatterns.Builder.csproj", "{8E59F94D-523D-453D-884B-F28B9CFD7F58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{0457FBDE-492D-4EEA-A322-64CD02F9ED98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0457FBDE-492D-4EEA-A322-64CD02F9ED98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0457FBDE-492D-4EEA-A322-64CD02F9ED98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E59F94D-523D-453D-884B-F28B9CFD7F58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E59F94D-523D-453D-884B-F28B9CFD7F58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E59F94D-523D-453D-884B-F28B9CFD7F58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E59F94D-523D-453D-884B-F28B9CFD7F58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

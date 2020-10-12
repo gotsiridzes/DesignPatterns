@@ -1,4 +1,5 @@
-﻿using DesignPatterns.SOLID.DependencyInversionPrinciple;
+﻿using DesignPatterns.Builder;
+using DesignPatterns.SOLID.DependencyInversionPrinciple;
 using DesignPatterns.SOLID.InterfaceSegregationPrinciple;
 using DesignPatterns.SOLID.LiskovSubstitutionPrinciple;
 using DesignPatterns.SOLID.OpenClosedPrinciple;
@@ -15,11 +16,16 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
+            #region SOLID
             SingleResponsibilityPrinciple();
             OpenClosedPrinciple();
             LiskovSubstitutionPrinciple();
             InterfaceSegregationPrinciple();
             DependencyInversionPrinciple();
+            #endregion
+
+            BuilderPattern();
+
         }
 
         private static void SingleResponsibilityPrinciple()
@@ -100,7 +106,6 @@ namespace DesignPatterns
             return products;
         }
 
-
         private static void LiskovSubstitutionPrinciple()
         {
             Console.WriteLine("Liskov Substitution Principle");
@@ -162,5 +167,17 @@ namespace DesignPatterns
             var research = new Research(rels);
         }
 
+        private static void BuilderPattern()
+        {
+            HtmlBuilder hb = new HtmlBuilder("ul");
+            hb.AddChild("li", "Hello World from ul li");
+
+            Console.WriteLine(hb);
+
+            hb = new HtmlBuilder("p");
+            hb.AddChild("a", "Hello world from paragraph");
+            hb.AddChild("a", "Hello world from paragraph2");
+            Console.WriteLine(hb);
+        }
     }
 }
