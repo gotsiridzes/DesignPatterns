@@ -9,11 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.SOLID.Single
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.SOLID.OpenClosedPrinciple", "DesignPatterns.SOLID.OpenClosedPrinciple\DesignPatterns.SOLID.OpenClosedPrinciple.csproj", "{B8A60120-4245-4498-A565-04CB9839D2D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.SOLID.LiskovSubstitutionPrinciple", "DesignPatterns.SOLID.LiskovSubstitutionPrinciple\DesignPatterns.SOLID.LiskovSubstitutionPrinciple.csproj", "{247CE7D2-2DDC-4DDF-944D-BFF2B4D17158}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.SOLID.LiskovSubstitutionPrinciple", "DesignPatterns.SOLID.LiskovSubstitutionPrinciple\DesignPatterns.SOLID.LiskovSubstitutionPrinciple.csproj", "{247CE7D2-2DDC-4DDF-944D-BFF2B4D17158}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.SOLID.InterfaceSegregationPrinciple", "DesignPatterns.SOLID.InterfaceSegregationPrinciple\DesignPatterns.SOLID.InterfaceSegregationPrinciple.csproj", "{9FA5F206-AAD3-4A8D-BA4D-CB6FEE180B15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.SOLID.InterfaceSegregationPrinciple", "DesignPatterns.SOLID.InterfaceSegregationPrinciple\DesignPatterns.SOLID.InterfaceSegregationPrinciple.csproj", "{9FA5F206-AAD3-4A8D-BA4D-CB6FEE180B15}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SOLID", "SOLID", "{DB5748CE-5FF8-4462-AE32-1CD84540CA23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.SOLID.DependencyInversionPrinciple", "DesignPatterns.SOLID.DependencyInversionPrinciple\DesignPatterns.SOLID.DependencyInversionPrinciple.csproj", "{0457FBDE-492D-4EEA-A322-64CD02F9ED98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{9FA5F206-AAD3-4A8D-BA4D-CB6FEE180B15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FA5F206-AAD3-4A8D-BA4D-CB6FEE180B15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FA5F206-AAD3-4A8D-BA4D-CB6FEE180B15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0457FBDE-492D-4EEA-A322-64CD02F9ED98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0457FBDE-492D-4EEA-A322-64CD02F9ED98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0457FBDE-492D-4EEA-A322-64CD02F9ED98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0457FBDE-492D-4EEA-A322-64CD02F9ED98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +56,7 @@ Global
 		{B8A60120-4245-4498-A565-04CB9839D2D2} = {DB5748CE-5FF8-4462-AE32-1CD84540CA23}
 		{247CE7D2-2DDC-4DDF-944D-BFF2B4D17158} = {DB5748CE-5FF8-4462-AE32-1CD84540CA23}
 		{9FA5F206-AAD3-4A8D-BA4D-CB6FEE180B15} = {DB5748CE-5FF8-4462-AE32-1CD84540CA23}
+		{0457FBDE-492D-4EEA-A322-64CD02F9ED98} = {DB5748CE-5FF8-4462-AE32-1CD84540CA23}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {485C83FF-6BF2-47B6-A4DB-C2C4B6244F37}

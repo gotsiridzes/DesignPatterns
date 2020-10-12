@@ -1,4 +1,5 @@
-﻿using DesignPatterns.SOLID.InterfaceSegregationPrinciple;
+﻿using DesignPatterns.SOLID.DependencyInversionPrinciple;
+using DesignPatterns.SOLID.InterfaceSegregationPrinciple;
 using DesignPatterns.SOLID.LiskovSubstitutionPrinciple;
 using DesignPatterns.SOLID.OpenClosedPrinciple;
 using DesignPatterns.SOLID.OpenClosedPrinciple.Specification;
@@ -18,6 +19,7 @@ namespace DesignPatterns
             OpenClosedPrinciple();
             LiskovSubstitutionPrinciple();
             InterfaceSegregationPrinciple();
+            DependencyInversionPrinciple();
         }
 
         private static void SingleResponsibilityPrinciple()
@@ -138,6 +140,27 @@ namespace DesignPatterns
             Scanner s = new Scanner();
 
             s.Scan(d);
+            Console.WriteLine();
         }
+
+        private static void DependencyInversionPrinciple()
+        {
+            Console.WriteLine("Dependency Inversion Principle");
+            // Dependency Inversion Principle
+            // States that high level parts of a system should not depend on low level parts of the system directly.
+            // Both should depend on some kind of abstraction
+
+            Person p = new Person("Gela");
+
+            Person c1 = new Person("Gelas shvili pirveli");
+            Person c2 = new Person("Gelas shvili meore");
+
+            Relationships rels = new Relationships();
+            rels.AddRelation(p, c1);
+            rels.AddRelation(p, c2);
+
+            var research = new Research(rels);
+        }
+
     }
 }
