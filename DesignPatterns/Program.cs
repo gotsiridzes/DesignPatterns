@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Builder;
+using DesignPatterns.Creational.Builder.Employee;
 using DesignPatterns.SOLID.DependencyInversionPrinciple;
 using DesignPatterns.SOLID.InterfaceSegregationPrinciple;
 using DesignPatterns.SOLID.LiskovSubstitutionPrinciple;
@@ -179,6 +180,18 @@ namespace DesignPatterns
             hb.AddChild("a", "Hello world from paragraph2");
             hb.AddChild("li", "li tag").AddChild("li", "chaining in builder");
             Console.WriteLine(hb);
+
+            //var builder = new PersonJobBuilder();
+            //builder.Called("Saba");
+            //.WorksAs
+
+            var emp = Employee
+                .New
+                .WorksAs("Developer")
+                .Called("Saba")
+                .Build();
+
+            Console.WriteLine(emp);
         }
     }
 }
