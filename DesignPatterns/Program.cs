@@ -177,6 +177,7 @@ namespace DesignPatterns
             hb = new HtmlBuilder("p");
             hb.AddChild("a", "Hello world from paragraph");
             hb.AddChild("a", "Hello world from paragraph2");
+            hb.AddChild("li", "li tag").AddChild("li", "chaining in builder");
             Console.WriteLine(hb);
         }
     }
