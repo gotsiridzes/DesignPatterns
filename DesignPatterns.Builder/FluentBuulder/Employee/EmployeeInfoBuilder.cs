@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesignPatterns.Creational.Builder.Employee
+namespace DesignPatterns.Creational.Builder.FluentBuulder.Employee
 {
     public class EmployeeInfoBuilder<T> : EmployeeBuilder
         where T : EmployeeInfoBuilder<T>

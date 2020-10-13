@@ -1,5 +1,6 @@
 ﻿using DesignPatterns.Builder;
-using DesignPatterns.Creational.Builder.Employee;
+using DesignPatterns.Creational.Builder.FacetedBuilder;
+using DesignPatterns.Creational.Builder.FluentBuulder.Employee;
 using DesignPatterns.SOLID.DependencyInversionPrinciple;
 using DesignPatterns.SOLID.InterfaceSegregationPrinciple;
 using DesignPatterns.SOLID.LiskovSubstitutionPrinciple;
@@ -192,6 +193,16 @@ namespace DesignPatterns
                 .Build();
 
             Console.WriteLine(emp);
+
+
+            var sb = new StudentBuilder();
+            Student student = sb
+                .Studies.At("TSU")
+                        .On("Exact and natural sciences")
+                .Is.Called("Saba");
+
+            Console.WriteLine();
+
         }
     }
 }
