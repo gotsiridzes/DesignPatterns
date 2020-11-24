@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesignPatterns.Creational.Factory
+namespace DesignPatterns.Creational.Factories
 {
     public class Point
     {

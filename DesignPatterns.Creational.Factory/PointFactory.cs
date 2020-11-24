@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesignPatterns.Creational.Factory
+namespace DesignPatterns.Creational.Factories
 {
     /// <summary>
     /// Creates instance of Point based on cartesian or polar system

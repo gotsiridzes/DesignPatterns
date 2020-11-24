@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Creational.B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{7D4A4064-0550-4A54-BE32-1AAC30452604}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Creational.Factory", "DesignPatterns.Creational.Factory\DesignPatterns.Creational.Factory.csproj", "{1EB552C7-41A6-4FFD-BEE8-DD8CC60B32DD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Creational.Factories", "DesignPatterns.Creational.Factory\DesignPatterns.Creational.Factories.csproj", "{1EB552C7-41A6-4FFD-BEE8-DD8CC60B32DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
