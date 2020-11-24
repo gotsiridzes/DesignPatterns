@@ -4,12 +4,6 @@ using System.Text;
 
 namespace DesignPatterns.Creational.Factory
 {
-    public enum CoordinateSystem
-    {
-        Cartesian,
-        Polar
-    }
-
     public class Point
     {
         public double X { get; set; }
@@ -17,14 +11,16 @@ namespace DesignPatterns.Creational.Factory
 
         public Point() { }
 
-        public Point(double x, double y)
+        private Point(double x, double y)
         {
             X = x;
             Y = y;
         }
 
+        public static Point Origin2 = new Point(0, 0);
+
         #region Factory Method
-        
+
         //private Point(double x, double y)
         //{
         //    X = x;
@@ -41,7 +37,23 @@ namespace DesignPatterns.Creational.Factory
         //{
         //    return new Point(rhoe * Math.Cos(theta), rhoe * Math.Sin(theta));
         //}
-        
+
         #endregion
+
+        /// <summary>
+        /// Inner Factory
+        /// </summary>
+        public static class Factory
+        {
+            public static Point NewCartesianPoint(double x, double y)
+            {
+                return new Point(x, y);
+            }
+
+            public static Point NewPolarPoint(double rhoe, double theta)
+            {
+                return new Point(rhoe * Math.Cos(theta), rhoe * Math.Sin(theta));
+            }
+        }
     }
 }

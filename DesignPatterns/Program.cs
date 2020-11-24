@@ -206,7 +206,11 @@ namespace DesignPatterns
 
         private static void FactoryMethod()
         {
-            var point = new Point().New;
+            //var point = Point().NewCartesianPoint(5,10);
+            //var point = PointFactory.NewCartesianPoint(10,20);
+            var point = Point.Factory.NewPolarPoint(1, Math.PI);
+
+            var origin = Point.Origin;
         }
     }
 }
