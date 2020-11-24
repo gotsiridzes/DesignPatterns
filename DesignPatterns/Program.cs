@@ -1,5 +1,4 @@
-﻿using DesignPatterns.Builder;
-using DesignPatterns.Creational.Builder.FacetedBuilder;
+﻿using DesignPatterns.Creational.Builder.FacetedBuilder;
 using DesignPatterns.Creational.Builder.FluentBuulder.Employee;
 using DesignPatterns.SOLID.DependencyInversionPrinciple;
 using DesignPatterns.SOLID.InterfaceSegregationPrinciple;
@@ -203,6 +202,11 @@ namespace DesignPatterns
 
             Console.WriteLine();
 
+        }
+
+        private static void FactoryMethod()
+        {
+            var point = new Point().New;
         }
     }
 }
