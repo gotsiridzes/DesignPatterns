@@ -23,5 +23,13 @@ High level modules shouldn't depend on low level parts of application.
 They should depend on some kind of abstraction.
 
 # Creational Design Patterns
+Creational patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
 
 ## Builder
+When you are constructing string from different pieces, you dont want to have multiple '+' signs for concatenating one string or have dozens of constructor arguments for doing the same.
+Instead, we should use piecewise construction, by allowing user to construct object piece by piece and provide good API for doing it.
+
+Fluent Builder - (fluent interface) an interface which allows you to chain several calls by returning a reference to the object.
+Fluent Builder Inheritance with recursive generics
+Faceted Builder
+
