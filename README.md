@@ -33,3 +33,10 @@ Fluent Builder - (fluent interface) an interface which allows you to chain sever
 Fluent Builder Inheritance with recursive generics
 Faceted Builder
 
+## Factories
+Factory Method and Abstract Factory
+Factory Method : Define an interface for creating an object, but let subclasses decide which class to instantiate. 
+Factory Method lets a class defer instantiation to subclasses
+
+Abstract Factory : provide an interface for creating families of related or dependent objects without specifying their concrete classes
+
