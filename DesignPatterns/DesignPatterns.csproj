@@ -8,6 +8,7 @@
   <ItemGroup>
     <ProjectReference Include="..\DesignPatterns.Builder\DesignPatterns.Creational.Factory.csproj" />
 	<ProjectReference Include="..\DesignPatterns.Builder\DesignPatterns.Creational.Builder.csproj" />
+	<ProjectReference Include="..\DesignPatterns.Creational.Factory\DesignPatterns.Creational.Factories.csproj" />
     <ProjectReference Include="..\DesignPatterns.SOLID.DependencyInversionPrinciple\DesignPatterns.SOLID.DependencyInversionPrinciple.csproj" />
     <ProjectReference Include="..\DesignPatterns.SOLID.InterfaceSegregationPrinciple\DesignPatterns.SOLID.InterfaceSegregationPrinciple.csproj" />
     <ProjectReference Include="..\DesignPatterns.SOLID.LiskovSubstitutionPrinciple\DesignPatterns.SOLID.LiskovSubstitutionPrinciple.csproj" />

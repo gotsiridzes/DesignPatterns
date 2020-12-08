@@ -1,5 +1,6 @@
 ﻿using DesignPatterns.Creational.Builder.FacetedBuilder;
 using DesignPatterns.Creational.Builder.FluentBuulder.Employee;
+using DesignPatterns.Creational.Factories;
 using DesignPatterns.SOLID.DependencyInversionPrinciple;
 using DesignPatterns.SOLID.InterfaceSegregationPrinciple;
 using DesignPatterns.SOLID.LiskovSubstitutionPrinciple;
@@ -210,7 +211,7 @@ namespace DesignPatterns
             //var point = PointFactory.NewCartesianPoint(10,20);
             var point = Point.Factory.NewPolarPoint(1, Math.PI);
 
-            var origin = Point.Origin;
+            var origin = Point.Origin2;
         }
     }
 }
