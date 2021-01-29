@@ -2,11 +2,10 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DesignPatterns.Builder\DesignPatterns.Creational.Factory.csproj" />
 	<ProjectReference Include="..\DesignPatterns.Builder\DesignPatterns.Creational.Builder.csproj" />
 	<ProjectReference Include="..\DesignPatterns.Creational.Factory\DesignPatterns.Creational.Factories.csproj" />
     <ProjectReference Include="..\DesignPatterns.SOLID.DependencyInversionPrinciple\DesignPatterns.SOLID.DependencyInversionPrinciple.csproj" />

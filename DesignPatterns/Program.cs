@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Creational.Builder.FacetedBuilder;
+﻿using DesignPatterns.Builder;
+using DesignPatterns.Creational.Builder.FacetedBuilder;
 using DesignPatterns.Creational.Builder.FluentBuulder.Employee;
 using DesignPatterns.Creational.Factories;
 using DesignPatterns.SOLID.DependencyInversionPrinciple;
